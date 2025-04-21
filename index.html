@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>nervous</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Dancing+Script&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <h1>simple test</h1>
+    <div id="question-container">
+      <p id="question"></p>
+      <input type="number" id="answer" placeholder="Your answer">
+      <button onclick="submitAnswer()">Submit</button>
+    </div>
+    <p id="level-info">Level: 1 / 5</p>
+  </div>
+
+  <!-- Surprise Screen (hidden until unlocked) -->
+  <div id="surprise-wrapper" class="hidden">
+    <div class="blur-overlay"></div>
+    <div id="present" onclick="revealMessage()">🎁</div>
+  </div>
+
+<div id="message-box" class="hidden">
+  <div class="gif-holder">
+    <img src="/giphy (1).gif" alt="Grabbing GIF">
+  </div>
+  <p>Can i court you?</p>
+  <form 
+    action="https://formsubmit.co/formybot57@gmail.com.com" 
+    method="POST" 
+    onsubmit="showThankYou();"
+  >
+    <input type="text" name="message" required placeholder="Type your answer here...">
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+<!-- Thank You Screen -->
+<div id="thank-you-screen" class="hidden">
+  <div class="thank-you-content">
+    <img src="/giphy.gif" alt="Thank You Animation">
+    <h2>Thank you!</h2>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html><tag>
+  <!--Tab to edit-->
+</tag>
